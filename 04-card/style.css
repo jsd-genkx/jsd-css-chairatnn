@@ -18,4 +18,78 @@
 
 body {
 	font-family: var(--font-sans), serif;
+	background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
+}
+
+.product-card {
+    width: 300px; 
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    text-align: left;
+    padding: 15px; 
+}
+
+/* Image Styling */
+.image-container {
+    background-color: gray; 
+    padding: 10px; 
+    border-radius: 4px; 
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+}
+
+/* Text Content Styling */
+.card-content {
+    padding: 0 5px;
+}
+
+.product-name {
+    font-size: 125%;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: black; 
+}
+
+.product-description {
+    font-size: 100%;
+    color: gray;
+    margin: 0 0 15px 0;
+}
+
+/* Button Styling */
+.buy-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-secondary); 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: var(--color-secondary);
 }
